@@ -2,14 +2,13 @@
    An instructor is represented by a name, a birth year, and a salary.
    You must enter the class name, instance variable(s), and constructor below
 */
-public class Instructor extends Person{
+public class Instructor extends Person {
 	double salary;
-	public Instructor() {
-		
-	}
-	public void setSalary(double salary) {
+	public Instructor(String name, int birthYear, double salary) {
+		super(name, birthYear);
 		this.salary = salary;
 	}
+	
 
 
    /**

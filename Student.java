@@ -5,12 +5,11 @@
 public class Student extends Person{
 	String major;
 	
-	public Student() {
-		setMajor(major);
-	}
-	public void setMajor(String major) {
+	public Student(String name, int birthYear, String major) {
+		super(name, birthYear);
 		this.major = major;
 	}
+	
 
    /**
       Returns the string representation of the object.

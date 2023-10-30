@@ -19,28 +19,13 @@ public class PersonTester
        * i1 is an Instructor "Joseph" born in 1954 earning 65000
        * Enter lines of code below to instantiate these objects:
        */
-	   Person p1 = new Person();
-	   p1.setName("John");
-	   p1.setBirthYear(1965);
-	   
-	   Person p2 = new Person();
-	   p2.setName("Mary Ann");
-	   p2.setBirthYear(1970);
-	   
-	   Student s1 = new Student();
-	   s1.setName("Ann");
-	   s1.setBirthYear(1982);
-	   s1.setMajor("Computer Science");
-	   
-	   Student s2 = new Student();
-	   s2.setName("Thomas");
-	   s2.setBirthYear(1986);
-	   s2.setMajor("Biology");
-	   
-	   Instructor i1 = new Instructor();
-	   i1.setName("Joseph");
-	   i1.setBirthYear(1954);
-	   i1.setSalary(65000);
+	  Person p1 = new Person("John", 1965);
+	  Person p2 = new Person("Mary Ann", 1970);
+	  
+	  Person s1 = new Student("Ann", 1982, "Computer Science");
+	  Person s2 = new Student("Thomas", 1986, "Biology");
+	  
+	  Person i1 = new Instructor("Joseph", 1954, 65000);
 
       /**
        * Leave the following lines 'as is' to verify that your results match the expected results
